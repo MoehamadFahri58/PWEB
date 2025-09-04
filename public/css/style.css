@@ -1,0 +1,172 @@
+.navbar {
+background: #000000;
+background: linear-gradient(15deg, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.47) 100%);
+  color: white;
+  position: fixed;
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+body {
+    background: #1f1f1f;
+}
+
+
+.hero {
+    background: url("../Images/sandro-katalina-k1bO_VTiZSs-unsplash.jpg") no-repeat center center;
+    height: 700px;
+    object-fit: contain;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.hero p {
+    background: #000000;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.91) 0%, rgba(59, 59, 59, 0.57) 100%);
+    color: white;
+    backdrop-filter: blur(2px);
+}
+
+/* Project */
+
+/* Footer */
+.footer {
+    background: #1f1f1f;
+}
+.project-container {
+    background: #1f1f1f;
+}
+.profile {
+    background: #1f1f1f;
+}
+.skills {
+    background: #1f1f1f;
+}
+
+.profile img {
+    min-width: 15rem;
+    min-height: 15rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.contact {
+  position: relative;
+  background: url("../Images/bence-balla-schottner-rBfGClhfd8I-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  z-index: 1;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.contact .display-3 {
+    margin-bottom: 2rem;
+}
+
+.contact .form-label {
+    text-size: 20px;
+}
+.contact .form-control {
+    background: #000000;
+background: linear-gradient(15deg, rgba(0, 0, 0, 0.53) 0%, rgba(255, 255, 255, 0.47) 100%);
+backdrop-filter: blur(2px);
+border: none;
+}
+
+.form-control:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+.form-control::placeholder {
+  color: #aaa;
+  opacity: 1;
+  font-style: italic;
+}
+
+.skills .container {
+    padding-top: 5rem;
+}
+
+.contact .container {
+    padding-top: 4rem;
+}
+
+.project .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.project .card:hover::after {
+    opacity: 1;
+    backdrop-filter: blur(1px);
+}
+
+.project .card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project .card .card-body {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: 99;
+}
+
+.project .card:hover .card-body {
+  transform: translate(-50%, 0);
+}
+
+.project .card img {
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+.project .card:hover img {
+  transform: scale(1.1);
+}
+
